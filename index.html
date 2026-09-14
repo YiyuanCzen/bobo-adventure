@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>卜卜大冒险 · Bobo Adventure</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="game-wrap"><canvas id="game" width="960" height="540"></canvas>
+<section id="startScreen" class="overlay"><div class="panel"><h1>卜卜大冒险</h1><div class="subtitle">BOBO ADVENTURE</div><p>穿过演唱会现场，收集金币，跳上一个又一个台阶！</p><button id="startBtn">开始游戏</button><div class="controls"><span>← → / A D 移动</span><span>SPACE 跳跃</span><span>P 暂停</span><span>R 重开始</span></div></div></section>
+<section id="pauseScreen" class="overlay hidden"><div class="panel small"><h2>游戏暂停</h2><button id="resumeBtn">继续游戏</button><button id="pauseRestartBtn" class="secondary">重新开始</button></div></section>
+<section id="gameOverScreen" class="overlay hidden"><div class="panel"><h2>卜卜摔倒啦！</h2><p id="gameOverText"></p><button id="gameOverRestartBtn">重新开始</button></div></section>
+<section id="winScreen" class="overlay hidden"><div class="panel win"><div class="confetti">★ ✦ ★ ✦ ★</div><h2>恭喜通关！</h2><p>卜卜冲到舞台终点啦！</p><p id="finalStats"></p><button id="winRestartBtn">再玩一次</button></div></section>
+</div><script src="game.js"></script></body></html>
